@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/index.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <input type="text" id="display">
+
+        <div class="botoes">
+            <button class="limpar" onclick="limpar(this.innerText)">C</button>
+            <button onclick="apagar(this.innerText)"><-</button>
+            <button class="operador" onclick="adicionar(this.innerText)">/</button>
+            <button class="operador" onclick="adicionar(this.innerText)">*</button>
+
+            <button onclick="adicionar(this.innerText)">7</button>
+            <button onclick="adicionar(this.innerText)">8</button>
+            <button onclick="adicionar(this.innerText)">9</button>
+            <button class="operador" onclick="adicionar(this.innerText)">-</button>
+
+            <button onclick="adicionar(this.innerText)">4</button>
+            <button onclick="adicionar(this.innerText)">5</button>
+            <button onclick="adicionar(this.innerText)">6</button>
+            <button class="operador" onclick="adicionar(this.innerText)">+</button>
+
+            <button onclick="adicionar(this.innerText)">1</button>
+            <button onclick="adicionar(this.innerText)">2</button>
+            <button onclick="adicionar(this.innerText)">3</button>
+
+            <button onclick="adicionar(this.innerText)">0</button>
+            <button onclick="adicionar(this.innerText)">.</button>
+            <button class="igual" onclick="calcular(this.innerText)">=</button>
+        </div>
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+</html>
